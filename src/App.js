@@ -4,7 +4,7 @@ import { useState } from 'react'
 
 function App() {
   const [name, setName] = useState("")
-  const [peperoni, setPeperoni] = useState(false)
+  const [pepperoni, setPepperoni] = useState(false)
   const [sausage, setSausage] = useState(false)
   const [peppers, setPeppers] = useState(false)
   const [onions, setOnions] = useState(false)
@@ -25,10 +25,10 @@ function App() {
         <label>
           <input 
             type="checkbox"
-            checked={peperoni}
-            onChange={() => setPeperoni(!peperoni)}
+            checked={pepperoni}
+            onChange={() => setPepperoni(!pepperoni)}
           />
-          Peperoni
+          Pepperoni
         </label>
 
         <label>
@@ -61,7 +61,7 @@ function App() {
       <div className='box-2'>
         <h2>Your Order</h2>
         {name && <p>{name}</p>}
-        {peperoni && <div>Pepperoni</div>}
+        {pepperoni && <div>Pepperoni</div>}
         {sausage && <div>Sausage</div>}
         {peppers && <div>Peppers</div>}
         {onions && <div>Onions</div>}
