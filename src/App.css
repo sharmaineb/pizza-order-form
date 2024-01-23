@@ -1,5 +1,30 @@
 .App {
-  text-align: center;
+  background-color: gray;
+  height: 50vh;
+  color: white;
+  font-weight: bold;
+  display: flex;
+  width: 40%;
+  justify-content: center;
+  margin-top: 30px;
+  margin-left: 10%;
+  padding-top: 20px;
+}
+
+.box-1 {
+  display: flex;
+  flex-direction: row;
+}
+
+.box-2 {
+  padding-left: 30px;
+  margin-top: 10%;
+}
+
+.App label {
+  padding-top: 10px;
+  display: flex;
+  flex-direction: row;
 }
 
 .App-logo {
